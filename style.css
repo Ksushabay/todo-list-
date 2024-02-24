@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Kode Mone", sans-serif;
+    background: #0d1f23;
+    color: white;
+}
+.todo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-block{
+    max-width: 700px;
+    padding: 20px 40px;
+    border-radius: 15px;
+    width: 100%;
+    background: #00616f;
+    min-height: 400px;
+
+}
+.todo_title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.todo_form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: relative;
+}
+.todo_input{
+    width: 80%;
+    height: 45px;
+    padding: 0 15px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    outline: none;
+}
+.todo_error{
+    position: absolute;
+    bottom: -30px;
+    color: red;
+    left: 35%;
+    font-size: 22px;
+    font-weight: 700;
+    display: none;
+    transform: translateX(-50px);
+
+}
+.todo_add{
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+button{
+    border: none;
+    cursor: pointer;
+    transition:.4s ;
+}
+.todo_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+
+}
+.todo_item{
+    width: 100%;
+    background: rgba(255,255,255,0.39);
+    backdrop-filter: blur(8px);
+    border: 1px solid white;
+    padding: 10px 15px;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 5px;
+    margin: 2.5px;
+}
+.todo_item-star,
+.todo_item-del {
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+}
+.todo_item-text{
+    color: white;
+    font-size: 22px;
+}
+
+.todo_item-left,
+.todo_item-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.todo_null{
+    position: absolute;
+    top: 80px;
+    left: 35%;
+    font-size: 25px;
+    display: none;
+
+}
